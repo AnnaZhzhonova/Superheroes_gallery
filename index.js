@@ -109,11 +109,11 @@ const data = [
     const card = document.createElement('div');
     parrent.append(card);
     const structure = `<h1 class="card__title">${object.name}</h1>
-    <p class="card__universe">${object.universe}</p>
-    <p class="card__alterego">${object.alterego}</p>
-    <p class="card__occupation">${object.occupation}</p>
-    <p class="card__friends">${object.friends}</p>
-    <p class="card__superpowers">${object.superpowers}</p>
+    <p class="card__universe">Вселенная: ${object.universe}</p>
+    <p class="card__alterego">Альтер эго: ${object.alterego}</p>
+    <p class="card__occupation">Род деятельности: ${object.occupation}</p>
+    <p class="card__friends">Друзья: ${object.friends}</p>
+    <p class="card__superpowers">Суперсилы: ${object.superpowers}</p>
     <img  class="card__img" src="${object.url}" alt="superhero">
     <p class="card__info">${object.info}</p>`;
     card.innerHTML = structure;
